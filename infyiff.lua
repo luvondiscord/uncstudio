@@ -1,10 +1,4 @@
-if IY_LOADED and not _G.IY_DEBUG then
-	-- error("Infinite Yield is already running!", 0)
-	return
-end
-
-pcall(function() getgenv().IY_LOADED = true end)
-if not game:IsLoaded() then game.Loaded:Wait() end
+print("helllo")
 
 function missing(t, f, fallback)
 	if type(f) == t then return f end
